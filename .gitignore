@@ -1,0 +1,4 @@
+venv/
+agent_doge/.venv/
+agent_doge/.env
+agent_doge/__pycache__/

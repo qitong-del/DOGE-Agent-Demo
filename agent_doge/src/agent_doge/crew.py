@@ -17,36 +17,148 @@ class AgentDoge():
 
 	# If you would like to add tools to your agents, you can learn more about it here:
 	# https://docs.crewai.com/concepts/agents#agent-tools
+	# @agent
+	# def researcher(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['researcher'],
+	# 		verbose=True
+	# 	)
+
+	# @agent
+	# def reporting_analyst(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['reporting_analyst'],
+	# 		verbose=True
+	# 	)
+
 	@agent
-	def researcher(self) -> Agent:
+	def business_analyst(self) -> Agent:
 		return Agent(
-			config=self.agents_config['researcher'],
+			config=self.agents_config['business_analyst'],
 			verbose=True
 		)
 
 	@agent
-	def reporting_analyst(self) -> Agent:
+	def mock_user(self) -> Agent:
 		return Agent(
-			config=self.agents_config['reporting_analyst'],
+			config=self.agents_config['mock_user'],
+			verbose=True
+		)
+	
+	@agent
+	def software_engineer(self) -> Agent:
+		return Agent(
+			config=self.agents_config['software_engineer'],
+			verbose=True
+		)
+	
+	@agent
+	def ai_engineer(self) -> Agent:
+		return Agent(
+			config=self.agents_config['ai_engineer'],
+			verbose=True
+		)
+	
+	@agent
+	def data_engineer(self) -> Agent:
+		return Agent(
+			config=self.agents_config['data_engineer'],
+			verbose=True
+		)
+	
+	@agent
+	def tech_lead(self) -> Agent:
+		return Agent(
+			config=self.agents_config['tech_lead'],
+			verbose=True
+		)
+	
+	@agent
+	def financial_analyst(self) -> Agent:
+		return Agent(
+			config=self.agents_config['financial_analyst'],
+			verbose=True
+		)
+	
+	@agent
+	def elon(self) -> Agent:
+		return Agent(
+			config=self.agents_config['elon'],
+			verbose=True
+		)
+	
+	@agent
+	def vivek(self) -> Agent:
+		return Agent(
+			config=self.agents_config['vivek'],
 			verbose=True
 		)
 
 	# To learn more about structured task outputs, 
 	# task dependencies, and task callbacks, check out the documentation:
 	# https://docs.crewai.com/concepts/tasks#overview-of-a-task
+	# @task
+	# def research_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['research_task'],
+	# 	)
+
+	# @task
+	# def reporting_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['reporting_task'],
+	# 		output_file='report.md'
+	# 	)
+
 	@task
-	def research_task(self) -> Task:
+	def business_value_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['research_task'],
+			config=self.tasks_config['business_value_task'],
 		)
 
 	@task
-	def reporting_task(self) -> Task:
+	def user_requirements_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['reporting_task'],
-			output_file='report.md'
+			config=self.tasks_config['user_requirements_task'],
 		)
-
+	
+	@task
+	def poc_development_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['poc_development_task'],
+		)
+	
+	@task
+	def ai_workflow_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['ai_workflow_task'],
+		)
+	
+	@task
+	def data_pipeline_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['data_pipeline_task'],
+		)
+	
+	@task
+	def tech_review_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['tech_review_task'],
+		)
+	
+	@task
+	def roi_metrics_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['roi_metrics_task'],
+		)
+	
+	@task
+	def summary_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['summary_task'],
+			output_file='summary.md'
+		)
+	
 	@crew
 	def crew(self) -> Crew:
 		"""Creates the AgentDoge crew"""

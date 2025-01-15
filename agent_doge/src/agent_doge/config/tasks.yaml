@@ -1,17 +1,75 @@
-research_task:
-  description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
-  expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+# research_task:
+#   description: >
+#     Conduct a thorough research about {topic}
+#     Make sure you find any interesting and relevant information given
+#     the current year is 2024.
+#   expected_output: >
+#     A list with 10 bullet points of the most relevant information about {topic}
+#   agent: researcher
 
-reporting_task:
+# reporting_task:
+#   description: >
+#     Review the context you got and expand each topic into a full section for a report.
+#     Make sure the report is detailed and contains any and all relevant information.
+#   expected_output: >
+#     A fully fledged report with the main topics, each with a full section of information.
+#     Formatted as markdown without '```'
+#   agent: reporting_analyst
+
+# modified tasks
+business_value_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Evaluate the business value of automating the specified task.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A detailed report on the business value and feasibility of the automation project.
+  agent: business_analyst
+
+user_requirements_task:
+  description: >
+    Gather user requirements and expectations for the automation program.
+  expected_output: >
+    A comprehensive list of user requirements and expectations.
+  agent: mock_user
+
+poc_development_task:
+  description: >
+    Develop a proof-of-concept software/code for the automation project.
+  expected_output: >
+    A functional proof-of-concept software/code.
+  agent: software_engineer
+
+ai_workflow_task:
+  description: >
+    Develop AI workflows for the automation software.
+  expected_output: >
+    Integrated AI workflows within the automation software.
+  agent: ai_engineer
+
+data_pipeline_task:
+  description: >
+    Develop data pipelines for the automation software and AI workflows.
+  expected_output: >
+    Robust data pipelines supporting the automation software and AI workflows.
+  agent: data_engineer
+
+tech_review_task:
+  description: >
+    Review the developed technology, identify deficiencies, and delegate tasks.
+  expected_output: >
+    A review report with identified deficiencies and delegated tasks.
+  agent: tech_lead
+
+roi_metrics_task:
+  description: >
+    Review outputs and provide ROI metrics to justify the automation project.
+  expected_output: >
+    A detailed report with ROI metrics and justification for the automation project.
+  agent: financial_analyst
+
+summary_task:
+  description: >
+    Provide a summary to the user on the solution, code functionality, ROI, next steps, and timeline for implementation.
+  expected_output: >
+    A summary report with solution details, code functionality, ROI, next steps, and timeline.
+  agent: elon
+

@@ -1,9 +1,12 @@
 # DOGE-Agent-Demo
 
-### Overivew
+### Overview
 This is a test demo of a multiagent tool for searching for areas of
 potential automation for DOGE.
-** Note: Downgrade python to below 3.12.8 (<=3.12.1 works or >=3.10)
+
+#### Notes: 
+- Downgrade python to below 3.12.8 (<=3.12.1 works or >=3.10) and start a venv with that version
+- Must download Visual Studio Installer and then check "Desktop development with C++ in order to install the right tools
 
 ### Specifications
 The tool follows the details listed below.

@@ -4,6 +4,12 @@
 This is a test demo of a multiagent tool for searching for areas of
 potential automation for DOGE.
 
+### Running the Tool
+1. Start the virtual environment (Make sure crewai is installed)
+2. Navigate into agent_doge/
+3. In terminal `crewai install` to lock dependencies
+4. `crewai run` to run the application (In main.py, the topic can be changed to the topic you are querying)
+
 #### Notes: 
 - Downgrade python to below 3.12.8 (<=3.12.1 works or >=3.10) and start a venv with that version
 - Must download Visual Studio Installer and then check "Desktop development with C++ in order to install the right tools
